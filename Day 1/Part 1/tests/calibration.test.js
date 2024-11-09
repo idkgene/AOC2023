@@ -16,11 +16,6 @@ const implementations = [
     description: 'Direct ASCII character code manipulation approach',
   },
   {
-    name: 'Better Optimized',
-    fn: require('../implementations/better-optimized/getCalibrationSum'),
-    description: 'Minimal operations and better control flow',
-  },
-  {
     name: 'Bitwise',
     fn: require('../implementations/bitwise/getCalibrationSum'),
     description: 'Bitwise operations approach',
