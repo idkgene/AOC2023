@@ -1,18 +1,4 @@
-function getCalibrationSum(input) {
-  return input
-    .split('\n')
-    .map((line) => {
-      // Regex is definitely overkill here (?)
-      // Screw you Regex!
-      const digits = line.match(/\d/g)
-      if (!digits) return 0
-      // Multiple string operations?
-      return parseInt(digits[0] + digits[digits.length - 1])
-    })
-    .reduce((sum, num) => sum + num, 0)
-}
-
-const input = `dssmtmrkonedbbhdhjbf9hq
+dssmtmrkonedbbhdhjbf9hq
 2njsevenszzsfltconesixhsflpbpd
 6shgbprkpbksnfourfivemvncvg2eight
 eightseventhree7lfqpnclxnnineninemgkjtqksrdone
@@ -1011,6 +997,4 @@ ninebqqbmqklht6mxfdsxdtwothreehrcvlzkqg
 vjchzt7btthreesix1tcngpbtzsfmvsx
 sjv8
 ncqpkzh5twooneoneqfxlqbjjhqsrlkhvdnvtbzpcbj
-449three45three`;
-
-console.log(getCalibrationSum(input)); // 142
+449three45three
