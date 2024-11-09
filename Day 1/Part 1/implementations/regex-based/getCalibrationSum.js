@@ -1,5 +1,8 @@
-const fs = require('fs')
+/*
+Calibration Sum Calculator (Regex-based Implementation)
 
+Uses regular expressions and functional programming approach.
+*/
 function getCalibrationSum(input) {
   return input
     .split('\n')
@@ -14,5 +17,4 @@ function getCalibrationSum(input) {
     .reduce((sum, num) => sum + num, 0)
 }
 
-const input = fs.readFileSync('../../input/calibration-data.txt', 'utf8')
-console.log(getCalibrationSum(input))
+module.exports = getCalibrationSum
